@@ -9,11 +9,7 @@ const controllerFunction = async (req, res, next) => {
 		
 		return res.status(201).send(result)
 
-	} catch (error) {
-		const { name: errorName, message, status } = error
-
-		if (errorName === 'ExampleError') return res.status(status).send(message)
-		
+	} catch (error) {		
 		next(error)
 	}
 }

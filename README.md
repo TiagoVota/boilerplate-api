@@ -9,8 +9,8 @@ Descrição lúdica sobre o projeto!
 Fala um pouco sobre e para que serve essa API. Na mesma, podemos encontrar as seguintes funcionalidades:
 
 ### Features
-- [x] [Verificar se o server está funcionando](#get-health)
-- [x] [Enviar um exemplo](#post-example)
+- [x] [`Verificar se o server está funcionando`](#get-health)
+- [x] [`Enviar um exemplo`](#post-example)
 
 <br/>
 
@@ -40,6 +40,7 @@ Fala um pouco sobre e para que serve essa API. Na mesma, podemos encontrar as se
 
 ## 🖥 Tecnologias
 <p align="center">
+	<img alt="mongodb" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
   <img alt="postgres" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
   <img alt="nodejs" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
   <img alt="npm" src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/>
