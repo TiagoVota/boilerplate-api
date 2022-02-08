@@ -1,18 +1,18 @@
 import * as exampleRepository from '../repositories/exampleRepository.js'
-import * as exampleValidation from '../validations/exampleValidation.js'
+import * as exampleSchema from '../schemas/exampleSchema.js'
 
 import { validationErrors } from '../validations/handleValidation.js'
 
-import ExampleError from '../errors/ExampleError.js'
+import SchemaError from '../errors/SchemaError.js'
 
 
 const serviceFunction = async (exampleInfo) => {
 	const exampleErrors = validationErrors({
 		objectToValid: exampleInfo,
-		objectValidation: exampleValidation.exampleSchema
+		objectValidation: exampleSchema.exampleSchema
 	})
 
-	if (exampleErrors) throw new ExampleError(exampleErrors)
+	if (exampleErrors) throw new SchemaError(exampleErrors)
 
 	const result = await exampleRepository.repositoryFunction(exampleInfo)
 
